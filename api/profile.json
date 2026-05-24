@@ -1,0 +1,33 @@
+{
+  "name": "Purim Promthong",
+  "name_th": "ภูริม พร้อมทอง",
+  "title": "Full-Stack Developer & Visual Designer",
+  "location": "Phuket, Thailand",
+  "address": "91/208 MJ House, Phuket Province, Thailand 83120",
+  "email": "Purim.prom@gmail.com",
+  "phone": "061-898-0412",
+  "bio": "มีความหลงใหลในการสร้างสิ่งใหม่ๆ ทั้ง Visual Design, Programming และ Content Creation",
+  "stats": {
+    "years_experience": 4,
+    "projects": 5,
+    "companies": 5
+  },
+  "skills": {
+    "programming": [
+      { "name": "PHP",  "level": 75 },
+      { "name": "Java", "level": 65 },
+      { "name": "Dart", "level": 60 },
+      { "name": "SQL",  "level": 70 }
+    ],
+    "design": [
+      { "name": "Adobe Photoshop",    "level": 85 },
+      { "name": "Adobe Illustrator",  "level": 80 },
+      { "name": "Video Editing",      "level": 75 }
+    ],
+    "tools": [
+      { "name": "VS Code",          "level": 90 },
+      { "name": "IT Support",       "level": 85 },
+      { "name": "Content Creation", "level": 80 }
+    ]
+  }
+}

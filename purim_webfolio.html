@@ -25,7 +25,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1rem 2rem;display:fl
 .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(124,92,252,.1);border:1px solid rgba(124,92,252,.3);border-radius:100px;padding:6px 16px;font-size:.8rem;color:var(--accent);margin-bottom:1.5rem;width:fit-content}
 .hero-name{font-family:"Syne",sans-serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:800;line-height:1;margin-bottom:.5rem}
 .hero-name span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero-title{font-size:1rem;color:var(--muted);margin-bottom:2rem}
+.hero-title{font-size:1rem;color:var(--muted);margin-bottom:2rem;min-height:1.6em}
+.hero-title .typed-cursor{display:inline-block;width:2px;height:1em;background:var(--accent);margin-left:2px;vertical-align:middle;animation:blink .7s step-end infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem}
 .btn-primary{background:var(--accent);color:#fff;padding:11px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.85rem;transition:transform .2s,box-shadow .2s;border:none;cursor:pointer}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(124,92,252,.4)}
@@ -316,7 +318,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
     <div class="hero-left">
       <div class="hero-tag">📍 Phuket, Thailand</div>
       <div class="hero-name">Purim<br><span>Promthong</span></div>
-      <div class="hero-title">Graphic Designer · IT Support · Content Creator · TikTok Marketing</div>
+      <div class="hero-title"><span id="typed-text"></span><span class="typed-cursor"></span></div>
       <div class="hero-btns">
         <a href="#projects" class="btn-primary">ดูผลงาน →</a>
         <a href="#contact" class="btn-outline">ติดต่อฉัน</a>
@@ -690,6 +692,22 @@ fetch("projects.json")
   .then(function(r) { if (!r.ok) throw 0; return r.json(); })
   .then(renderProjects)
   .catch(function() { renderProjects(fallback); });
+
+// Typing animation
+(function(){
+  var words = ["Graphic Designer","IT Support","Content Creator","TikTok Marketing","VR Developer","3D Designer"];
+  var el = document.getElementById("typed-text");
+  var wi = 0, ci = 0, deleting = false;
+  function tick(){
+    var word = words[wi];
+    el.textContent = deleting ? word.substring(0, ci--) : word.substring(0, ci++);
+    var delay = deleting ? 50 : 80;
+    if (!deleting && ci > word.length){ delay = 1800; deleting = true; }
+    else if (deleting && ci < 0){ deleting = false; ci = 0; wi = (wi + 1) % words.length; delay = 300; }
+    setTimeout(tick, delay);
+  }
+  tick();
+})();
 
 // Mobile nav toggle
 (function(){

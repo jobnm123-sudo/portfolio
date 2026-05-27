@@ -146,7 +146,7 @@ section{padding:5rem 2rem;max-width:1000px;margin:0 auto}
    PROJECTS
 ══════════════════════════════════════════ */
 .projects-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem}
-.projects-hint{font-size:.75rem;color:var(--muted);background:transparent;border:1px solid var(--border);padding:7px 13px;border-radius:4px}
+.projects-hint{display:none}
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.5rem}
 .project-card{position:relative;border-radius:6px;overflow:hidden;background:var(--card);border:1px solid var(--border);transition:transform .3s cubic-bezier(.4,0,.2,1),border-color .3s,box-shadow .3s}
 .project-card.has-gallery{cursor:pointer}
@@ -328,7 +328,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 
 <nav>
   <div class="nav-logo">PP.</div>
-  <button class="theme-btn" id="theme-btn">🌙 Dark</button>
+  <button class="theme-btn" id="theme-btn" style="display:none">🌙 Dark</button>
   <button class="nav-toggle" id="nav-toggle" aria-label="เมนู">
     <span></span><span></span><span></span>
   </button>

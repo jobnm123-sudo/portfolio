@@ -115,8 +115,9 @@
   {
     "title": "MyStock — Telegram Stock Bot",
     "desc": "พัฒนา Telegram Bot สำหรับติดตามหุ้น US ดูราคาแบบ Real-time, วิเคราะห์ด้วย AI, จัดการ Watchlist & Portfolio, ตั้ง Price Alert และสแกนหุ้นจิ๋ว <$10",
-    "image": "projects/telegram_bot/1.jfif",
+    "image": "projects/telegram_bot/stock-bot-logo.svg",
     "gallery": [
+      "projects/telegram_bot/stock-bot-logo.svg",
       "projects/telegram_bot/1.jfif",
       "projects/telegram_bot/2.jfif",
       "projects/telegram_bot/3.jfif"

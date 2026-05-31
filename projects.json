@@ -91,6 +91,27 @@
     "year": "2022"
   },
   {
+    "title": "HelpFit — Calorie Tracker Bot",
+    "desc": "Telegram Bot ติดตามแคลอรี่ ส่งรูปอาหาร → AI วิเคราะห์ macro อัตโนมัติด้วย Gemini Vision, คำนวณ BMR/TDEE, บันทึก intake/burn และสรุปยอดประจำวัน",
+    "image": "projects/helpfit/1.jfif",
+    "gallery": [
+      "projects/helpfit/1.jfif",
+      "projects/helpfit/2.jfif",
+      "projects/helpfit/3.jfif"
+    ],
+    "emoji": "🥗",
+    "color": "#0f1a0a",
+    "color2": "#1a3010",
+    "tags": [
+      "Programming",
+      "Python",
+      "Telegram Bot",
+      "AI",
+      "Gemini"
+    ],
+    "year": "2025"
+  },
+  {
     "title": "MyStock — Telegram Stock Bot",
     "desc": "พัฒนา Telegram Bot สำหรับติดตามหุ้น US ดูราคาแบบ Real-time, วิเคราะห์ด้วย AI, จัดการ Watchlist & Portfolio, ตั้ง Price Alert และสแกนหุ้นจิ๋ว <$10",
     "image": "projects/telegram_bot/1.jfif",

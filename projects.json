@@ -91,6 +91,22 @@
     "year": "2022"
   },
   {
+    "title": "MyStock — Telegram Stock Bot",
+    "desc": "พัฒนา Telegram Bot สำหรับติดตามหุ้น US ดูราคาแบบ Real-time, วิเคราะห์ด้วย AI, จัดการ Watchlist & Portfolio, ตั้ง Price Alert และสแกนหุ้นจิ๋ว <$10",
+    "image": "",
+    "gallery": [],
+    "emoji": "📈",
+    "color": "#0a1a0f",
+    "color2": "#0d3520",
+    "tags": [
+      "Programming",
+      "Python",
+      "Telegram Bot",
+      "AI"
+    ],
+    "year": "2025"
+  },
+  {
     "title": "Fitness Mobile App",
     "desc": "สร้างแอพเพื่อเป็นตัวช่วยในการออกกำลังกายได้ง่ายขึ้น พัฒนาด้วย Flutter & Dart",
     "image": "projects/Workout/1.jpg",

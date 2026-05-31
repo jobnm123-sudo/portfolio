@@ -170,6 +170,8 @@ section{padding:5rem 2rem;max-width:1000px;margin:0 auto}
 .project-title{font-weight:700;font-size:1rem;margin-bottom:6px;transition:color .2s}
 .project-card.has-gallery:hover .project-title{color:var(--accent);}
 .project-desc{font-size:.82rem;color:var(--muted);line-height:1.55}
+.demo-btn{display:inline-flex;align-items:center;gap:6px;margin-top:.75rem;background:rgba(124,92,252,.1);border:1px solid rgba(124,92,252,.3);color:var(--accent);font-size:.75rem;font-weight:600;padding:6px 14px;border-radius:100px;text-decoration:none;transition:background .2s,transform .2s}
+.demo-btn:hover{background:rgba(124,92,252,.25);transform:translateY(-1px)}
 .project-card.placeholder{border-style:dashed;background:transparent;cursor:default}
 .project-card.placeholder:hover{transform:none;border-color:var(--border);box-shadow:none}
 .project-card.placeholder::before{display:none}
@@ -671,6 +673,7 @@ function buildCard(p) {
   var badge = hasGallery ? "<div class='gallery-badge'>🖼 " + p.gallery.length + " ภาพ — คลิกดู</div>" : "";
   var year = p.year ? "<div class='project-year'>" + p.year + "</div>" : "";
   var hint = hasGallery ? "<div class='view-hint'>👆 คลิกเพื่อดูรูปทั้งหมด</div>" : "";
+  var demoBtn = p.demo ? "<a class='demo-btn' href='" + p.demo + "' target='_blank' rel='noopener' onclick='event.stopPropagation()'>🔗 ดู Demo</a>" : "";
 
   var card = document.createElement("div");
   card.className = "project-card" + (hasGallery ? " has-gallery" : "");
@@ -684,6 +687,7 @@ function buildCard(p) {
       "<div class='project-tags'>" + tags + "</div>" +
       "<div class='project-title'>" + p.title + "</div>" +
       "<div class='project-desc'>" + p.desc + "</div>" +
+      demoBtn +
     "</div>";
 
   if (hasGallery) {

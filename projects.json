@@ -93,6 +93,7 @@
   {
     "title": "WebShop — E-Commerce Practice",
     "desc": "ทดลองสร้าง E-Commerce Website จำลองระบบซื้อขายสินค้าออนไลน์ คล้ายกับ Shop เว็บดังๆ มีระบบแสดงสินค้า ตะกร้า และ UI ที่ใช้งานง่าย",
+    "demo": "https://jobnm123-sudo.github.io/webshop/",
     "image": "projects/webshop/logo.svg",
     "gallery": [
       "projects/webshop/logo.svg",

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#f7931e"/>
+    </linearGradient>
+    <linearGradient id="shineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="10" y="10" width="180" height="180" rx="40" ry="40" fill="url(#bgGrad)"/>
+  <!-- Shine overlay -->
+  <rect x="10" y="10" width="180" height="90" rx="40" ry="40" fill="url(#shineGrad)"/>
+
+  <!-- Shopping bag icon -->
+  <path d="M68 85 L72 65 Q72 55 80 55 L120 55 Q128 55 128 65 L132 85 Z"
+        fill="none" stroke="white" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M85 55 Q85 42 100 42 Q115 42 115 55"
+        fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Bag body rounded rect -->
+  <rect x="62" y="83" width="76" height="62" rx="12" ry="12"
+        fill="white" opacity="0.95"/>
+
+  <!-- ShopNow "S" letter inside bag -->
+  <text x="100" y="128" font-family="Arial, sans-serif" font-size="38" font-weight="900"
+        fill="url(#bgGrad)" text-anchor="middle">S</text>
+
+  <!-- Sparkle stars -->
+  <circle cx="148" cy="52" r="4" fill="white" opacity="0.9"/>
+  <circle cx="160" cy="40" r="2.5" fill="white" opacity="0.7"/>
+  <circle cx="155" cy="62" r="2" fill="white" opacity="0.6"/>
+  <circle cx="52" cy="148" r="3" fill="white" opacity="0.6"/>
+  <circle cx="42" cy="158" r="2" fill="white" opacity="0.4"/>
+</svg>
